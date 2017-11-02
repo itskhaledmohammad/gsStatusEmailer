@@ -8,13 +8,13 @@ Setting up is pretty easy. Lets do it:
 1. Open the sheet you want to use ***Google Sheet Status Emailer*** on.
 2. Open ***Script Editor*** by going to ***Tools>Script Editor...*** 
 3. Paste the code from ***emailStatus.gs*** from this repo to the ***Code.js*** in ***Script Editor...***.
-4. Now just change the variable ***statusClm*** in the code to the coloumn number which holds the status. 
+4. Now just change the variable `statusClm` in the code to the coloumn number which holds the status. 
 5. We are done.
 
 **NOTE: If this is your first time adding a script to this Google Sheet, it may require you give permission, give it the permission to make it work. And make sure the script is set to bound**
 
 The script works out of the box for the following spread sheet setup:
-**FIRST TWO ROWS OF THE SCRIPT ARE SKIPPED FOR DIFFERENT USAGE.**
+**FIRST TWO ROWS OF THE SCRIPT ARE SKIPPED FOR DIFFERENT USAGE.(variable `rowsUsed` can be modified to set the number of rows being used.)**
 
 | ITEMS         | DEADLINE      | STATUS  |
 | item1|9/12/2040|PENDING|
