@@ -2,7 +2,11 @@
  * Sends email when the status of an item is updated.
  */ 
 function docEdited(e){
-     // Setting things up. 
+  
+  // I am using my third column as for status holder. And I am using the first two rows for Title and other things. 
+  if((e.range.getRow() > 3.0) && (e.range.getColumn() == 3.0)){
+    
+    // Setting things up. 
     var sheet = SpreadsheetApp.getActiveSheet();
     var data = sheet.getRange(sheet.getSheetName() + "!" + e.range.getRow() + ":" + e.range.getRow()).getValues();
     var docName = SpreadsheetApp.getActive().getName();
@@ -31,4 +35,6 @@ function docEdited(e){
       subject: "The status of an item of '" + docName + "' was updated",
       htmlBody: body
     });
+    
+  }       
 }
