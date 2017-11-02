@@ -7,7 +7,7 @@ This is a script written in app script(Google's own twist on Javascript for inte
 Setting up is pretty easy. Lets do it:
 1. Open the sheet you want to use ***Google Sheet Status Emailer*** on.
 2. Open ***Script Editor*** by going to ***Tools>Script Editor...*** 
-3. Paste the code from ***emailStatus.gs*** from this repo to the ***Code.js*** in ***Script Editor...***.
+3. Paste the code from ***emailStatus.gs*** from this repo to the ***Code.js*** in ***Script Editor***.
 4. Now just change the variable `statusClm` in the code to the coloumn number which holds the status. 
 5. Open ***Current project's triggers*** by going to ***Edit>Current project's triggers*** from the ***Script Editor windows***.
 6. Add new trigger by clicking on ***Add a new trigger*** choose **docEdited** from the **Run** column, choose **From spreadsheet** from the **Events** column and on the last column choose **On edit**. 
